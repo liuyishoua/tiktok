@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dou">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.ChangeUserInfoActivity"></activity>
+        <activity
+            android:name=".ui.activity.ChangeUserBriefActivity"
+            android:label="修改简介" />
+        <activity
+            android:name=".ui.activity.UserInfoActivity"
+            android:label="更多" />
+        <activity android:name=".ui.activity.UserActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity
+            android:name=".ui.activity.VideoPublishActivity"
+            android:label="发布" />
+        <activity android:name=".ui.activity.VerifyLogin2Activity" />
+        <activity android:name=".ui.activity.VerifyLoginActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.UserVideoActivity" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.RecordActivity" />
+        <activity
+            android:name=".ui.activity.VideoAlbumActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoCameraActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TrimVideoActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoPreviewActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
